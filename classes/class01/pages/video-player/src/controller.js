@@ -4,6 +4,8 @@ export default class Controller {
   constructor({ view, service }) {
     this.#view = view
     this.#service = service
+
+    this.#view.configureOnBtnClick(this.onBtnStart.bind(this))
   }
 
   static async initialize(deps) {
