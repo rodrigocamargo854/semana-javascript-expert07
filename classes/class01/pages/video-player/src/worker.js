@@ -23,3 +23,10 @@
 //   if(!blinked) return;
 //   postMessage({ blinked })
 // }
+
+onmessage = ({ data }) => {
+    console.log('worker', data)
+    postMessage({
+        'ok': 'ok'
+    })
+}
