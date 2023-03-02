@@ -26,8 +26,8 @@ Marque esse projeto com uma estrela 🌟
   - [] - Ao mover elementos na tela, deve disparar evento **:hover** em elementos em contexto
 
 - Video Player
-  - [] - Deve ser possivel de reproduzir ou pausar videos com o piscar de olhos 😁
-  - [] - Todo processamento de Machine Learning deve ser feito via Web worker
+  - [x] - Deve ser possivel de reproduzir ou pausar videos com o piscar de olhos 😁
+  - [x] - Todo processamento de Machine Learning deve ser feito via Web worker
 
 ### Desafios
 - [] - Aula 01 - Diferenciar piscada de olhos entre olho direito e esquerdo e atualizar log para mostrar qual olho que piscou.
