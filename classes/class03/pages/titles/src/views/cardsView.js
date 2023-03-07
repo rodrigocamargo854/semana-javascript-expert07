@@ -1,4 +1,3 @@
-
 export default class CardsView {
   #browseSearchList = document.getElementById('browseSearch')
   #inputSearch = document.getElementById('inputSearch')
@@ -15,7 +14,7 @@ export default class CardsView {
       target.disabled = true
       fn(target.value)
       target.disabled = false
-      this.#inputSearch.focus() // solução
+      this.#inputSearch.focus()
     })
   }
 
