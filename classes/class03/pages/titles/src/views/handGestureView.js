@@ -31,7 +31,9 @@ export default class HandGestureView {
     clickOnElement(x, y) {
       const element = document.elementFromPoint(x, y)
       if(!element) return;
-      
+      console.log({element,x,y})
+
+      //disparando o click => rect
       const rect = element.getBoundingClientRect()
       const event = new MouseEvent('click', {
         view: window,
