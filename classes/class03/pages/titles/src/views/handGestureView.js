@@ -16,14 +16,14 @@ export default class HandGestureView {
       for (const { keypoints, handedness } of hands) {
         if (!keypoints) continue
   
-        this.#canvasContext.fillStyle = handedness === "Left" ? "green" : "red"
+        this.#canvasContext.fillStyle = handedness === "Left" ? "rgb(44, 212, 103)" : "rgb(44, 212, 103)"
         this.#canvasContext.strokeStyle = "white"
         this.#canvasContext.lineWidth = 8
         this.#canvasContext.lineJoin = "round"
   
         // juntas
         this.#drawJoients(keypoints)
-        // desenha dedos
+        // dedos
         this.#drawFingersAndHoverElements(keypoints)
       }
     }
@@ -45,6 +45,20 @@ export default class HandGestureView {
     }
   
     
+    #drawJoients(keypoints) {
+      for (const { x, y } of keypoints) {
+        this.#canvasContext.beginPath()
+        const newX = x - 2
+        const newY = y - 2
+        const radius = 3
+        const startAngle = 0
+        const endAngle = 2 * Math.PI
+  
+        this.#canvasContext.arc(newX, newY, radius, startAngle, endAngle)
+        this.#canvasContext.fill()
+      }
+    }
+
     #drawFingersAndHoverElements(keypoints) {
       const fingers = Object.keys(this.#fingerLookupIndexes)
       for (const finger of fingers) {
@@ -62,20 +76,7 @@ export default class HandGestureView {
       }
     }
 
-    #drawJoients(keypoints) {
-      for (const { x, y } of keypoints) {
-        this.#canvasContext.beginPath()
-        const newX = x - 2
-        const newY = y - 2
-        const radius = 3
-        const startAngle = 0
-        const endAngle = 2 * Math.PI
-  
-        this.#canvasContext.arc(newX, newY, radius, startAngle, endAngle)
-        this.#canvasContext.fill()
-      }
-    }
-
+    
 
     loop(fn) {
       requestAnimationFrame(fn)

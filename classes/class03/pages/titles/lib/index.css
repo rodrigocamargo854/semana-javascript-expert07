@@ -1,3 +1,30 @@
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search
+Sign in
+Sign up
+SSar4
+/
+semana_js_expert
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+Insights
+semana_js_expert/classes/class03/pages/titles/lib/index.css
+@SSar4
+SSar4 desafio 03: sobrepor a prop z-index do canvas > movie-desc prop z-index
+Latest commit a0269db 5 days ago
+ History
+ 1 contributor
+1203 lines (998 sloc)  19.5 KB
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap");
 
@@ -628,19 +655,20 @@ a {
     background-color: #616161;
 }
 
-.card:hover .overlay, .card.active .overlay{
+/* .card:hover .overlay, .card.active .overlay{
     display: flex;
     background-image: linear-gradient(to right,
             rgba(51, 51, 51, 0.95),
             rgba(255, 255, 255, 0.01));
 }
+*/
 
-/* .card .overlay {
+.card .overlay {
     display: flex;
     background-image: linear-gradient(to right,
             rgba(51, 51, 51, 0.95),
             rgba(255, 255, 255, 0.01));
-} */
+} 
 
 .overlay p {
     color: #bdbdbd;
@@ -1185,4 +1213,15 @@ a {
     .socials svg {
         padding: 0px 10px;
     }
+}
+#hands {
+     /* faz com que elementos possam ser clicaveis */
+     /*pointer-events: none;
+
+     /* faz ficar em cima dos elementos */
+     position: fixed;
+ 
+     /* fica à frente dos elementos */
+     z-index: 9999;
+ 
 }
