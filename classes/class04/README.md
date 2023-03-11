@@ -7,6 +7,12 @@ Marque esse projeto com uma estrela 🌟
 ## Preview
 <img width=100% src="./classes/class01/assets/demo-template-lg.gif">
 
+
+## Live demo
+
+- Para testar o projeto final [clique aqui](https://erickwendel.github.io/semana-javascript-expert07/classes/class04/)
+
+
 ## Pre-reqs
 - Este projeto foi criado usando Node.js v19.6
 - O ideal é que você use o projeto em ambiente Unix (Linux). Se você estiver no Windows, é recomendado que use o [Windows Subsystem Linux](https://www.omgubuntu.co.uk/how-to-install-wsl2-on-windows-10) pois nas aulas são mostrados comandos Linux que possam não existir no Windows.
@@ -20,16 +26,16 @@ Marque esse projeto com uma estrela 🌟
 
 ## Checklist Features
 - Titles List
-  - [] - Campo para pesquisa não deve travar ao digitar termo de pesquisa
-  - [] - Deve desenhar mãos na tela e fazer com que elementos em segundo plano  continuem sendo clicáveis  🙌
-  - [] - Deve disparar scroll up quando usar a palma das mãos abertas 🖐
-  - [] - Deve disparar scroll down quando usar a palma das mãos fechadas ✊
-  - [] - Deve disparar click no elemento mais próximo quando usar  gesto de pinça 🤏🏻
-  - [] - Ao mover elementos na tela, deve disparar evento **:hover** em elementos em contexto
+  - [X] - Campo para pesquisa não deve travar ao digitar termo de pesquisa
+  - [X] - Deve desenhar mãos na tela e fazer com que elementos em segundo plano  continuem sendo clicáveis  🙌
+  - [X] - Deve disparar scroll up quando usar a palma das mãos abertas 🖐
+  - [X] - Deve disparar scroll down quando usar a palma das mãos fechadas ✊
+  - [X] - Deve disparar click no elemento mais próximo quando usar  gesto de pinça 🤏🏻
+  - [X] - Ao mover elementos na tela, deve disparar evento **:hover** em elementos em contexto
 
 - Video Player
-  - [] - Deve ser possivel de reproduzir ou pausar videos com o piscar de olhos 😁
-  - [] - Todo processamento de Machine Learning deve ser feito via Web worker
+  - [X] - Deve ser possivel de reproduzir ou pausar videos com o piscar de olhos 😁
+  - [X] - Todo processamento de Machine Learning deve ser feito via Web worker
 
 ### Desafios
 - [] - Aula 01 - Diferenciar piscada de olhos entre olho direito e esquerdo e atualizar log para mostrar qual olho que piscou.
